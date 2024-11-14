@@ -18,10 +18,19 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
+      "@/ui/*": ["components/ui/*"],
+      "@/registry/new-york/ui/*": ["registry/new-york/ui/*"],
+      "@/app/*": ["app/*"],
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
